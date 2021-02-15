@@ -356,8 +356,8 @@ section.features {
   .hero_image {
     background: url(../images/image-intro-mobile.jpg) no-repeat center center/cover;
     width: 100vw;
-    -webkit-transform: translateX(-2.5em);
-            transform: translateX(-2.5em);
+    -webkit-transform: translateX(-2.3em);
+            transform: translateX(-2.3em);
     height: 500px;
     -ms-grid-row: 1;
     -ms-grid-column: 1;
@@ -365,6 +365,8 @@ section.features {
   }
   .hero_image img {
     display: none;
+    -webkit-transform: none;
+            transform: none;
   }
 }
 
