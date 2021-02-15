@@ -1,0 +1,13 @@
+@media only screen and (max-width:950px)
+    .hero
+        height: 100vh
+        display: grid
+        grid-template-columns: 1fr
+        grid-template-rows: repeat(2, calc((100vh-60px)/2))
+        grid-template-areas: "pic" "text"
+        &_text
+        grid-area: text
+        &_image
+            grid-area: pic
+            img
+                transform: none
