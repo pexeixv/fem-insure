@@ -356,9 +356,9 @@ section.features {
   .hero_image {
     background: url(../images/image-intro-mobile.jpg) no-repeat center center/cover;
     width: 100vw;
-    -webkit-transform: translateX(-2.3em);
-            transform: translateX(-2.3em);
-    height: 500px;
+    -webkit-transform: translateX(-2em);
+            transform: translateX(-2em);
+    min-height: 800px;
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: pic;
