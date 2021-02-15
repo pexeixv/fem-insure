@@ -68,6 +68,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -103,6 +104,17 @@ header {
 .nav_link-emp:hover {
   background: #2b272f;
   color: #fafafa;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.headerWrapper header nav.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .heroWrapper {
@@ -316,6 +328,57 @@ section.features {
   .hero_image img {
     -webkit-transform: none;
             transform: none;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .headerWrapper header {
+    position: relative;
+  }
+  .headerWrapper header .hamburger {
+    display: inline;
+    width: 25px;
+    height: 25px;
+  }
+  .headerWrapper header .nav {
+    z-index: 3;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 90vh;
+    -webkit-transform: translateX(-60px);
+            transform: translateX(-60px);
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: #2b272f;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .headerWrapper header .nav_link {
+    font-size: 2em;
+    text-align: center;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .headerWrapper header .nav_link:hover {
+    color: #fafafa;
+  }
+  .headerWrapper header .nav_link-emp {
+    color: #837d87;
+    border: 2px solid #837d87;
+  }
+  .headerWrapper header .nav_link-emp:hover {
+    background: #837d87;
+    color: #2b272f;
   }
 }
 /*# sourceMappingURL=home.css.map */

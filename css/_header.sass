@@ -6,8 +6,8 @@ header
     height: 100%
     display: flex
     justify-content: space-between
+    width: 100%
     align-items: center
-
 .nav
     display: flex
     &_link
@@ -26,4 +26,9 @@ header
                 background: color(neu1)
                 color: color(neu3)
 
+.hamburger
+    display: none
+    cursor: pointer
 
+.headerWrapper header nav.show
+    display: flex

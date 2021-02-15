@@ -11,3 +11,37 @@
             grid-area: pic
             img
                 transform: none
+
+
+@media only screen and (max-width:850px)
+    .headerWrapper header
+        position: relative
+        .hamburger
+            display: inline
+            width: 25px
+            height: 25px
+        .nav
+            z-index: 3
+            display: none
+            flex-direction: column
+            height: 90vh
+            transform: translateX(-60px)
+            width: 100vw
+            position: absolute
+            left: 0
+            top: 100%
+            background: color(neu1)
+            align-items: center
+            justify-content: space-evenly
+            &_link
+                font-size: 2em
+                text-align: center
+                width: max-content
+                &:hover
+                    color: color(neu3)
+                &-emp
+                    color: color(neu2)
+                    border: 2px solid color(neu2)
+                    &:hover
+                        background: color(neu2)
+                        color: color(neu1)
